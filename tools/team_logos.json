@@ -1,0 +1,19 @@
+{
+  "_comment": "队伍缩写(teamSpName) -> 深色背景 logo(teamDarkLogo)。来源: vct.qq.com 列表接口 msg[].teamA/teamB.teamDarkLogo。更新清单后运行 tools/gen_team_logos.py 重新生成 main/app_logos.c。",
+  "100T": "https://esports.val.qq.com/val/gen/team/100T_white_d8300181cf11abd3fb459b1a82526dc5.png",
+  "EDG": "https://esports.val.qq.com/val/gen/team/EDG_white_d7878f51c92ebc28b3b78fbffe389573.png",
+  "FUT": "https://esports.val.qq.com/val/gen/team/FUT_white_d712440b2c86c066cece06be2194f140.png",
+  "G2": "https://esports.val.qq.com/val/gen/team/G2_white_96e9740f5089f42dfd58a39c349853ba.png",
+  "GE": "https://esports.val.qq.com/val/gen/team/GE_white_79eb40004aadff14fffbd0cb0f9ff1a2.png",
+  "JDG": "https://esports.val.qq.com/val/gen/team/JDG_white_caf58706da85b8bcb1932f1393c61e13.png",
+  "KC": "https://esports.val.qq.com/val/gen/team/KC_white_faa3aff564f0089eb1ae1f5ff080968d.png",
+  "LOUD": "https://esports.val.qq.com/val/gen/team/LOUD_white_63ebaace58498f9fd417aa13013a4edd.png",
+  "NRG": "https://esports.val.qq.com/val/gen/team/NRG_white_6ed64ecbcbfbe00408f3c86c2771a973.png",
+  "NS": "https://esports.val.qq.com/val/gen/team/NS_white_7a790cef0066b9673703d173a146dce4.png",
+  "PRX": "https://esports.val.qq.com/val/gen/team/PRX_white_5aee86f006a92e73d64b4bfd59c944e9.png",
+  "T1": "https://esports.val.qq.com/val/gen/team/T1_white_a927ee757233d063f8b2224ed9823036.png",
+  "TL": "https://esports.val.qq.com/val/gen/team/TL_white_fa23202fdfdf5c578e6b2e9398def5cb.png",
+  "TYL": "https://esports.val.qq.com/val/gen/team/TYL_white_56474ea35a9ce119267b60193aada6c4.png",
+  "VIT": "https://esports.val.qq.com/val/gen/team/VIT_white_06445c27fd432e6bd01c4884287d07af.png",
+  "XLG": "https://esports.val.qq.com/val/gen/team/XLG_white_c80d8d6dc2afbe546b7a1ff81dfb1976.png"
+}

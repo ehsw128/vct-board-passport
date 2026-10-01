@@ -1,0 +1,40 @@
+# --- 目标芯片 ---
+CONFIG_IDF_TARGET="esp32c3"
+# 注:ESP32-C3 无 PSRAM,故不设 CONFIG_SPIRAM。
+
+# --- Flash ---
+# FoloToy AI Passport 当前产品/固件基线使用 8MB Flash。
+CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+# 固定 8MB 镜像头，关闭 detect，便于 idf.py merge-bin。
+CONFIG_ESPTOOLPY_HEADER_FLASHSIZE_UPDATE=n
+# 默认模板只保留 NVS、PHY data 和占用剩余空间的 factory app；用户可按需修改。
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
+
+# --- 控制台:USB-Serial-JTAG(C3 原生 USB,GPIO18/19)---
+# 不用 UART0:其默认 TX=GPIO21 与本板背光引脚冲突。
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+CONFIG_ESP_CONSOLE_SECONDARY_NONE=y
+
+# --- LVGL ---
+CONFIG_LV_COLOR_DEPTH_16=y
+# 20 ms display refresh period targets up to 50 FPS when rendering and SPI
+# transfer complete within the same budget.
+CONFIG_LV_DEF_REFR_PERIOD=20
+CONFIG_LV_FONT_MONTSERRAT_14=y
+# LVGL 内置 malloc 池大小(KB)。它是独立静态区、不与系统堆共享,配大了会白白占用 RAM。
+# 看板列表页一次持有约 20 个卡片对象,24KB 会出现分配失败,取 48KB。
+CONFIG_LV_MEM_SIZE_KILOBYTES=48
+
+# --- 网络 TLS ---
+# HTTPS 数据源(val.native.game.qq.com / open.tjstats.com)使用证书 bundle 校验。
+CONFIG_MBEDTLS_CERTIFICATE_BUNDLE=y
+CONFIG_LWIP_SNTP_MAX_SERVERS=4
+
+# --- 系统 ---
+CONFIG_FREERTOS_HZ=1000
+
+# --- Bluetooth ---
+# 看板应用不使用蓝牙;关闭 host 以释放约 60KB RAM 与编译体积。
+CONFIG_BT_ENABLED=n

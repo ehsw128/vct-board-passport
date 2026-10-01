@@ -1,0 +1,7 @@
+VCT 看板 v18 GitHub 源码包
+
+包含完整工程源码、应用资源、测试、依赖锁文件和两份 0x0 合并固件。
+不含 .git 历史、本机配置、编译缓存及 managed_components。
+解压后使用 ESP-IDF 5.5.3 构建；组件管理器依据 dependencies.lock 和组件清单恢复依赖。
+固件位于 firmware/；联网正式版与离线界面版请勿混用。
+上传 GitHub 时解压后提交工程目录，不要只上传此 zip。

@@ -1,0 +1,2 @@
+22360f6fad61667e9e712d0c312e4e2c06fb539d23377e060cd3725de0cbe824  firmware/VCT-Board-v18-full.bin
+a9bf215c99d696ecfbf3afca9f4d4a5bdd5ed38a7ddb8d5a0cfec4ad3de24867  firmware/VCT-Board-v18-UI-preview-full.bin

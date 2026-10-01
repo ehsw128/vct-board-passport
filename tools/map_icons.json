@@ -1,0 +1,4 @@
+{
+  "_comment": "赛事接口出现的地图英文名(mapNameEn)。新增地图只需在此追加后重跑 gen_map_icons.py。",
+  "maps": ["Ascent", "Summit", "Lotus", "Abyss", "Sunset", "Split", "Haven"]
+}
